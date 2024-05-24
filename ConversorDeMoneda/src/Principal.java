@@ -1,11 +1,13 @@
 import javax.swing.*;
-import java.util.Objects;
 
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Object[] opciones = {"Convertir Divisas", "Salir"};
-        //Cargando la imagen de mi icono:
-        ImageIcon icono = new ImageIcon(Principal.class.getResource("ConversorDeMoneda/resources/iconConverter.png"));
-        int elige = JOptionPane.showOptionDialog(null,"¿Qué quieres hacer?", "Conversor de moneda", JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE, icono, opciones, opciones[0]);
+        int elige = JOptionPane.showOptionDialog(null,"¡Comencemos!", "Conversor de moneda :)", JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
+
+        if (elige == 1){
+            JOptionPane.showMessageDialog(null, "Espero haberte ayudado. ¡Hasta luego! :)");
+            System.exit(0);
+        }
     }
 }
