@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) throws Exception {
@@ -8,6 +9,8 @@ public class Principal {
         if (elige == 1){
             JOptionPane.showMessageDialog(null, "Espero haberte ayudado. ¡Hasta luego! :)");
             System.exit(0);
+        } else {
+            ConversorDeMonedas.ConvertirPesosA();
         }
     }
 }
