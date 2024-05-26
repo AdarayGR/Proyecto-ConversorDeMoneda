@@ -32,7 +32,7 @@ public class ConversorDeMonedas {
 //            Cancelar selección
             if (seleccion == null){
                 otraconversion = false;
-                JOptionPane.showMessageDialog(null,"¡Hasta luego! :)");
+                JOptionPane.showMessageDialog(null,"¡Hasta luego! ♥");
                 break;
             }
 
@@ -75,7 +75,7 @@ public class ConversorDeMonedas {
             int repetir = JOptionPane.showConfirmDialog(null, "¿Realizar otra conversión?", "Confirmación", JOptionPane.YES_NO_OPTION);
             if (repetir != JOptionPane.YES_OPTION){
                 otraconversion = false;
-                JOptionPane.showMessageDialog(null, "¡Adios!♥");
+                JOptionPane.showMessageDialog(null, "¡Adios! ♥");
             }
         } while (otraconversion);
     }
